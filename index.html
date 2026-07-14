@@ -230,8 +230,14 @@
       font-size:.9rem;
     }
     @media (min-width: 900px){
-      .work-slider{justify-content:center;overflow:visible;flex-wrap:nowrap}
-      .work-slide{flex-basis:31%;max-width:370px;min-height:560px}
+      .work-slider{
+        display:grid;
+        grid-template-columns:repeat(3,minmax(0,1fr));
+        width:min(1120px,100%);
+        margin:auto;
+        overflow:visible;
+      }
+      .work-slide{width:100%;max-width:none;min-height:560px}
       .hero-image{max-height:1080px;object-fit:contain;background:#fffaf2}
       .before-after .full-image,.price .full-image{width:min(1040px,100%);margin:auto;object-fit:contain}
     }
@@ -253,13 +259,13 @@
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <img class="brand-logo" src="image_01.png" alt="Wave Project Design" />
+      <img class="brand-logo" src="image_01.png" alt="Wave Project Design" width="1215" height="340" loading="lazy" />
     </div>
   </header>
 
   <main>
     <section class="hero-wrap visual-section" aria-label="プロ品質のフードビジュアル">
-      <img class="hero-image" src="image_02.png" alt="スマホで撮った写真を送るだけ。販促デザイン制作。">
+      <img class="hero-image" src="image_02.png" alt="スマホで撮った写真を送るだけ。販促デザイン制作。" width="977" height="1610" loading="lazy">
     </section>
 
     <section class="works-section" aria-label="制作実績">
@@ -270,43 +276,43 @@
       </div>
       <div class="work-slider">
         <article class="work-slide">
-          <img src="image_03.png" alt="ハンバーガー販促デザイン">
+          <img src="image_03.png" alt="ハンバーガー販促デザイン" width="1024" height="1536" loading="lazy">
           <div class="slide-caption"><small>POSTER / SNS</small>バーガーデザイン</div>
         </article>
         <article class="work-slide">
-          <img src="image_04.png" alt="アサイーボウルメニュー画像">
+          <img src="image_04.png" alt="アサイーボウルメニュー画像" width="1054" height="1492" loading="lazy">
           <div class="slide-caption"><small>MENU</small>アサイーボウル</div>
         </article>
         <article class="work-slide">
-          <img src="image_05.png" alt="天ぷら蕎麦の和風販促デザイン">
+          <img src="image_05.png" alt="天ぷら蕎麦の和風販促デザイン" width="941" height="1672" loading="lazy">
           <div class="slide-caption"><small>JAPANESE FOOD</small>和風デザイン</div>
         </article>
 
         <article class="work-slide">
-          <img src="image_06.jpg" alt="ハワイアンポキボウル">
+          <img src="image_06.jpg" alt="ハワイアンポキボウル" width="941" height="1672" loading="lazy">
           <div class="slide-caption"><small>HAWAIIAN</small>ハワイアンポキボウル</div>
         </article>
         <article class="work-slide">
-          <img src="image_07.jpg" alt="クレープデザイン">
+          <img src="image_07.jpg" alt="クレープデザイン" width="1000" height="1415" loading="lazy">
           <div class="slide-caption"><small>SWEETS</small>クレープデザイン</div>
         </article>
         <article class="work-slide">
-          <img src="image_08.jpg" alt="かき氷デザイン">
+          <img src="image_08.jpg" alt="かき氷デザイン" width="1000" height="1500" loading="lazy">
           <div class="slide-caption"><small>DESSERT</small>かき氷デザイン</div>
         </article>
         <article class="work-slide">
-          <img src="image_09.jpg" alt="チキンオーバーライス">
+          <img src="image_09.jpg" alt="チキンオーバーライス" width="941" height="1672" loading="lazy">
           <div class="slide-caption"><small>FOOD TRUCK</small>チキンオーバーライス</div>
         </article>
         <article class="work-slide">
-          <img src="image_10.jpg" alt="タコライスデザイン">
+          <img src="image_10.jpg" alt="タコライスデザイン" width="941" height="1672" loading="lazy">
           <div class="slide-caption"><small>OKINAWA</small>タコライスデザイン</div>
         </article>
       </div>
     </section>
 
     <section class="full-image-section before-after" aria-label="ビフォーアフター">
-      <img class="full-image" src="image_11.png" alt="送っていただいた写真から制作後デザインへのビフォーアフター">
+      <img class="full-image" src="image_11.png" alt="送っていただいた写真から制作後デザインへのビフォーアフター" width="1122" height="1402" loading="lazy">
     </section>
 
     <section class="flow-section" aria-label="ご依頼の流れ">
@@ -343,7 +349,7 @@
         <h2>料金表</h2>
         <p class="lead">内容・難易度に応じてお見積りいたします。</p>
       </div>
-      <img class="full-image" src="image_12.png" alt="料金表">
+      <img class="full-image" src="image_12.png" alt="料金表" width="862" height="1825" loading="lazy">
     </section>
   </main>
 
